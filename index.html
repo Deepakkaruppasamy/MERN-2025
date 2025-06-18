@@ -1,172 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Login Form Change</title>
+  <style>
+    h2 {
+      color: rgb(23, 181, 225);
+      text-align: center;
+    }
+
+    .f1 {
+      color: rgb(83, 131, 213);
+      padding: 10px;
+      max-width: 300px;
+    }
+
+    .group {
+      padding-bottom: 20px;
+    }
+
+    .group label {
+      display: block;
+      margin-bottom: 5px;
+      width: 100;
+    }
+
+    .group input {
+      width: 100%;
+      padding: 8px;
+    
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      cursor:pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
- 
-    <nav class="navbar">
-        <div class="logo">Portfolio</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
+  <h2>Login Form Control</h2>
+  <form class="f1">
+    <div class="group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="name">
+    </div>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Deepak k</span></h1>
-            <p class="subtitle">Full Stack Developer & Data Analyst</p>
-            <div class="cta-buttons">
-                <a href="#contact" class="btn primary">Let's Connect</a>
-                <a href="#projects" class="btn secondary">See My Work</a>
-            </div>
-        </div>
-    </section>
+    <div class="group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="email">
+    </div>
 
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>I'm a passionate Full Stack Developer with 3+ years of experience crafting beautiful and functional web applications. My journey in tech started with a curiosity about how things work on the web, which led me to dive deep into both front-end and back-end development.</p>
-                <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through tech blogs. I believe in writing clean, maintainable code and creating intuitive user experiences that make a difference.</p>
-            </div>
-        </div>
-    </section>
+    <div class="group">
+      <label for="pass">Password:</label>
+      <input type="password" id="pass" placeholder="password">
+    </div>
 
-    <section id="skills" class="skills">
-        <h2>My Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <i class="fab fa-html5"></i>
-                <h3>HTML5</h3>
-                <p>Semantic markup & accessibility</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-css3-alt"></i>
-                <h3>CSS3</h3>
-                <p>Responsive design & animations</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-js"></i>
-                <h3>JavaScript</h3>
-                <p>ES6+ & modern frameworks</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-angular"></i>
-                <h3>Angular</h3>
-                <p>Component-based architecture</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-node-js"></i>
-                <h3>Node.js</h3>
-                <p>Backend development</p>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-database"></i>
-                <h3>MongoDB</h3>
-                <p>Database management</p>
-            </div>
-        </div>
-    </section>
+    <input type="submit" value="Login">
+  </form>
 
-    <section id="projects" class="projects">
-        <h2>Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&auto=format" alt="E-commerce Platform">
-                <h3>E-commerce Platform</h3>
-                <p>A full-stack e-commerce solution with real-time inventory management, secure payment processing, and responsive design.</p>
-                <div class="project-links">
-                    <a href="#" class="btn">Live Demo</a>
-                    <a href="#" class="btn">GitHub</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&auto=format" alt="Task Management App">
-                <h3>Medconsult</h3>
-                <p>A collaborative telemedicine application with real-time medical management features.</p>
-                <div class="project-links">
-                    <a href="#" class="btn">Live Demo</a>
-                    <a href="#" class="btn">GitHub</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=500&auto=format" alt="AI Chat Assistant">
-                <h3>AI Chat Assistant</h3>
-                <p>An intelligent chat assistant powered by machine learning, capable of understanding and responding to natural language queries.</p>
-                <div class="project-links">
-                    <a href="#" class="btn">Live Demo</a>
-                    <a href="#" class="btn">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </section>
+<table border="2px">
+  <tr>
+    <td colspan="2">A</td>
+    <td colspan="2">B</td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td colspan="2">D</td>
+    <td>E</td>
+  </tr>
+  <tr>
+    <td>F</td>
+    <td>G</td>
+    <td>H</td>
+    <td  rowspan="2">I</td>
+  </tr>
+  <tr>
+    <td colspan="2">J</td>
+    <td>K</td>
+  </tr>
+</table>
 
-    <section id="testimonials" class="testimonials">
-        <h2>Client Testimonials</h2>
-        <div class="testimonials-slider">
-            <div class="testimonial-card">
-                <p>"Alex transformed our outdated website into a modern, user-friendly platform. His attention to detail and technical expertise exceeded our expectations. The new site has increased our conversion rate by 40%!"</p>
-                <div class="testimonial-author">
-                    <h4>Aravindhan</h4>
-                    <p>Marketing Director, TechCorp</p>
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <p>"Working with Alex was a game-changer for our startup. He not only delivered a robust e-commerce solution but also provided valuable insights that helped us scale our business effectively."</p>
-                <div class="testimonial-author">
-                    <h4>Prince</h4>
-                    <p>Founder, StartupX</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Get In Touch</h2>
-        <div class="contact-container">
-            <form id="contact-form" class="contact-form">
-                <div class="form-group">
-                    <input type="text" id="name" name="name" required placeholder="Your Name">
-                </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email" required placeholder="Your Email">
-                </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" required placeholder="Your Message"></textarea>
-                </div>
-                <button type="submit" class="btn primary">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="social-links">
-                <a href="https://github.com/alexjohnson" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/alexjohnson" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/alexjohnson" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-                <a href="mailto:alex@example.com"><i class="fas fa-envelope"></i></a>
-            </div>
-            <p>&copy; 2024 Deepak K.<br> All rights reserved.</p>
-            <p class="footer-location"><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
-</html> 
+</html>

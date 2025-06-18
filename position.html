@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+      height: 2000px; 
+
+    }
+    #sticky{
+        position: sticky;
+        top: 0;
+        background-color: lightgreen;
+      padding: 10px;
+      border: 2px solid green;
+    }
+    #fixed{
+        position:fixed;
+         background-color: lightcoral;
+         padding: 10px;
+         border: 2px solid red;
+    }
+    #relative{
+        position: relative;
+        background-color: lightblue;
+      padding: 30px;
+      border: 2px solid blue;
+    }
+    #absolute{
+        position: absolute;
+         top: 10px;
+      right: 10px;
+      background-color: gold;
+      padding: 10px;
+      border: 2px solid orange;
+    }
+</style>
+<body>
+    <p>The position property in CSS is used to control the layout and placement of elements on a web page. 
+        It defines how an element is positioned in the document and interacts with other elements.
+         There are five main values: static, relative, absolute, fixed, and sticky. 
+         By default, elements have static positioning, which means they follow the normal flow of the document. 
+         Relative positioning moves an element relative to its normal position, while absolute positions it relative to its nearest positioned ancestor.
+          Fixed places an element relative to the viewport, and sticky toggles between relative and fixed based on scroll position.
+           Using position effectively allows for flexible and complex layouts in web design.</p>
+           
+    <div id="sticky">
+        <h1>Sticky</h1>
+    </div>
+    <div id="fixed">
+        <h1>Fixed</h1>
+    </div>
+    <div id="relative"> <h1>Relative</h1>
+   <div id="absolute"><h1>Absolute</h1></div>
+    </div>
+
+</body>
+</html>

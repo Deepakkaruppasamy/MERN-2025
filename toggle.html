@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Text</title>
+</head>
+<body>
+    <p id="header">Hello World</p>
+    <button onclick="buttonOnclicked()">Change Text</button>
+    <button onclick="changeColor()">Change Color</button>
+    <br><br>
+    
+    <input type="text" id="name" placeholder="Enter a name">
+    <button onclick="addName()">Add</button>
+    <ul id="list"></ul>
+
+    <script>
+        var buttonOnclicked = () => {
+            const header = document.getElementById("header");
+            header.innerHTML = header.innerHTML === "Hello World" ? "Hello Kongu" : "Hello World";
+        };
+
+        var changeColor = () => {
+            const header = document.getElementById("header");
+            header.style.color = "red";
+            header.style.fontSize = "20px";
+        };
+
+        var addName = () => {
+            const data = document.getElementById("name");
+            const name = data.value.trim();
+
+            if (name !== "") {
+                const li = document.createElement("li");
+                li.textContent = name;
+                document.getElementById("list").appendChild(li);
+                data.value = ""; 
+            }
+        };
+    </script>
+</body>
+</html>
