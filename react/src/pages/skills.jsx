@@ -1,9 +1,13 @@
-import { Component } from 'react';
-class skills extends Component {
-    render(){
-        return (
-            <div>Skills</div>
-        )
-    }
+import React ,{useContext}from 'react'
+import {Context } from '../hooks/Context'
+const Skills = () => {
+    const user=useContext(Context);
+  return (
+     <div>
+    <h1>{user.username}</h1>
+ 
+    </div>
+  )
 }
-export default skills;
+
+export default Skills
