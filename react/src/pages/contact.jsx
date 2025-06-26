@@ -1,5 +1,5 @@
 import React,{useContext} from 'react'
-import Context  from '../Hooks/Context'
+import Context  from '../hooks/Context'
 const Contact = ({users}) => {
   const user = useContext(Context)
   return (
