@@ -1,6 +1,6 @@
 import React from 'react';
 import Child from './component/Child/';
-import Skills from './pages/Skills';
+import Skills from './component/Skills';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import About from './pages/About';
