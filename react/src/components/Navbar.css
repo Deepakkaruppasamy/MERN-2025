@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #2a0ae3;
+}
+
+.link {
+  background-color: #dec6a9;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+}

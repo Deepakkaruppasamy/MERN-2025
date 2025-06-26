@@ -1,13 +1,13 @@
 import { createContext } from "react";
 
-export const Context=createContext();
+const Context = createContext();
 
-export const UserContext=({children})=>{
-    const user={username: "Deepak" ,phn:"1234567890"}
-        return(
-            <Context.Provider value={user}>
-                {children}
-                </Context.Provider>
-        )
-    
+export const UserContext = ({children}) => {
+    const user = {name:"pavi",phno:"9874561230"}
+    return(
+        <Context.Provider value={user}>
+            {children}
+        </Context.Provider>
+    )
 }
+export default Context;

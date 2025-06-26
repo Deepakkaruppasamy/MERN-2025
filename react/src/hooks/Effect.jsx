@@ -1,7 +1,14 @@
-import React, {useState} from 'react'
+import React, {useEffect,useState} from 'react'
 
-const State = () => {
+const Effect = () => {
     const [Count,setCount]=useState(0);
+    useEffect(()=>{
+      
+      setTimeout(()=>{
+      setCount(Count+1)
+    },2000)
+    },[Count])
+    
     const handleIncrement=()=>{
         setCount(Count+1);
     }
@@ -26,4 +33,4 @@ const State = () => {
   )
 }
 
-export default State
+export default Effect

@@ -1,13 +1,9 @@
-import React ,{useContext}from 'react'
-import {Context } from '../hooks/Context'
-const Skills = () => {
-    const user=useContext(Context);
+import React from 'react'
+
+const skills = () => {
   return (
-     <div>
-    <h1>{user.username}</h1>
- 
-    </div>
+    <div>skills</div>
   )
 }
 
-export default Skills
+export default skills

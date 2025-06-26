@@ -1,14 +1,12 @@
-import React, { useContext } from 'react';
-import {Context } from '../hooks/Context';
-
-
-const Contact = () => {
-  const user=useContext(Context);
+import React,{useContext} from 'react'
+import Context  from '../Hooks/Context'
+const Contact = ({users}) => {
+  const user = useContext(Context)
   return (
-    <div>
-    <h1>{user.username}</h1>
-    <h1>{user.phn}</h1>
-    </div>
+    <>
+    <div>{user.name}</div>
+    <div>{user.phno}</div>
+    </>
   )
 }
 
