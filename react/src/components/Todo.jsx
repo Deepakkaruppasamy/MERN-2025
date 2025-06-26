@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
-const API = 'https://mern2025-5zh8.onrender.com'
+const API = 'https://mern-2025-detn.onrender.com'
 
 const Todo = () => {
   const [task, setTask] = useState('')
