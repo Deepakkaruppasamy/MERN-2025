@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>RPS</h2>
+    <h3>choose any one</h3>
+    <button onclick="func('rock')">Rock</button>
+    <button onclick="func('paper')">Paper</button>
+    <button onclick="func('scissor')">Scissor</button>
+    <h1 id="result"></h1>
+
+</body>
+<script>
+    function func(userchoice){
+        choice=['rock','paper','scissor']
+        computerchoice=choice[(Math.floor(Math.random()*3))]
+        console.log(computerchoice);
+        var result=""
+        if(userchoice===computerchoice){
+result="Draw🙌"
+        }
+        else if((userchoice==='rock'&&computerchoice==='paper') || (userchoice==='paper'&&computerchoice==='scissor') || (userchoice==='scissor'&&computerchoice==='rock')){
+            result="loss😢"
+        }
+        else{
+            result="Win😎"
+        }
+        document.getElementById('result').innerHTML=result
+    }
+</script>
+</html>

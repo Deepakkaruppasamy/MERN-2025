@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="demo">hello world</h1>
+    <button onclick="myfunc()">change</button>
+    <input type="text" id="name">
+    <button onclick="addname()">click to add name</button>
+    <ol type="1" id="namelist"></ol>
+
+    <script>
+        function myfunc(){
+let currentmsg=document.getElementById("demo").textContent;
+let ans=currentmsg=="hello world"?"hello kec":"hello world";
+document.getElementById("demo").innerHTML=ans;
+        }
+        function addname(){
+            var name=document.getElementById("name").value;
+            var li=document.createElement("li")
+            li.innerText=name
+            document.getElementById("namelist").append(li)
+        }
+    
+    </script>
+</body>
+</html>
