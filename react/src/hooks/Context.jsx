@@ -3,7 +3,7 @@ import { createContext } from "react";
 const Context = createContext();
 
 export const UserContext = ({children}) => {
-    const user = {name:"pavi",phno:"9874561230"}
+    const user = {name:"John wick", phno:"9998887777"}
     return(
         <Context.Provider value={user}>
             {children}

@@ -1,5 +1,3 @@
-
-
 import React from 'react'
 
 import Child from './components/Child'
@@ -11,11 +9,11 @@ import Login from './pages/Login'
 
 import Counter from './pages/Counter/'
 import Hooks from './pages/Hooks'
-import State from './Hooks/State'
-import Effect from './Hooks/Effect'
-import Effect2 from './Hooks/Effect2'
-import Ref from './Hooks/Ref'
-import Reducer from './Hooks/Reducer'
+import State from './hooks/State'
+import Effect from './hooks/Effect'
+import Effect2 from './hooks/Effect2'
+import Ref from './hooks/Ref'
+import Reducer from './hooks/Reducer'
 import Navbar from './components/Navbar'
 import {Route,Routes} from 'react-router-dom'
 import Todo from './components/Todo'
@@ -27,8 +25,8 @@ const App = () => {
     <div>
      <Navbar/>
      <Routes>
-<Route path='/' element={<Home items={fruits} users={userdetails} />} />
-      <Route path='/about' element={<About items={fruits} users={userdetails}/>}/>
+<Route path='/' element={<Home items={fruits} users={users} />} />
+      <Route path='/about' element={<About items={fruits} users={users}/>}/>
   
       <Route path='/contact' element={<Contact/>}/>
        <Route path='/skills' element={<Skills/>}/>
